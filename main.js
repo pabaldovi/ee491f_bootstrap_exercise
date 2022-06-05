@@ -1,7 +1,7 @@
 $(document).ready(function() {
     console.log("main.js loaded");
     $("button").on("click", function() {
-        $(".page-header").toggleClass("black-bg");
+        $("*").css("background-color", "black");
     });
     $("p").click(function() {
         $("p").hide();

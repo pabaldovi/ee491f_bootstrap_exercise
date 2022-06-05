@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- <link rel="stylesheet" href="style.css"> -->
         <!-- CSS only -->
         <link 
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
@@ -24,41 +23,61 @@
     <body>
         <header class="page-header">
             <div class = "center">
-                <!-- <a href = "http://ee491f.github.io/course-material/#html-exercises">ee491f html exercise</a> -->
                 <a id = "top"></a>
                 <button id="button">click here to change background color to black</button>
             </div>
         </header>
 
-        <nav>
-            <a href="#h1-h6">h1-h6</a> |
-            <a href="#p">p</a> |
-            <a href="#span">span</a> |
-            <!-- <a href="#img">img</a> | -->
-            <a href="#table">table</a> |
-            <a href="#ul">ul</a> |
-            <a href="#ol">ol</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#h1-h6">h1-h6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p">p</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#span">span</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#table">table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ul">ul</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ol">ol</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <hr/>
 
         <main>
             <a id = "h1-h6"></a>
-            <h1>heading 1</h1>
-            <h2>heading 2</h2>
-            <h3>heading 3</h3>
-            <h4>heading 4</h4>
-            <h5>heading 5</h5>
-            <h6>heading 6</h6>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>heading 1</h1>
+                        <h2>heading 2</h2>
+                        <h3>heading 3</h3>
+                    </div>
+                    <div class="col">
+                        <h4>heading 4</h4>
+                        <h5>heading 5</h5>
+                        <h6>heading 6</h6>
+                    </div>
+                </div>
+            </div>
     
             <a id = "p"></a>
-            <p id = "red-paragraph">red paragraph</p>
+            <p id = "red-paragraph" class="alert alert-danger" role="alert">red paragraph</p>
             <a id = "span"></a>
-            <p>and <span style="color:blue">blue text</span></p>
+            <p class="alert alert-primary">and <span style="color:blue">blue text</span></p>
     
-            <!-- <img id = "img" src="images/img.png" alt="Image of this line"> -->
-    
-            <table id = "table">
+            <table id = "table" class="border border-secondary">
                 <!-- row1 -->
                 <tr>
                     <th>column header1</th>
@@ -71,13 +90,13 @@
                 </tr>
             </table>
     
-            <ul id = "ul" class = "list">
+            <ul id = "ul" class = "border border-dark">
                 <li>1</li>
                 <li>2</li>
                 <li>3</li>
             </ul>
     
-            <ol id = "ol" class = "list">
+            <ol id = "ol" class = "border">
                 <li>1</li>
                 <li>2</li>
                 <li>3</li>
